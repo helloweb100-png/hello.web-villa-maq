@@ -41,6 +41,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" href="img/web/logo-blanco.png">
   <link rel="preload" as="image" href="img/web/engrane-industrial-maquinado.jpg" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
 
@@ -132,6 +133,7 @@
   <div class="loader__hud loader__hud--br">Precisión · Industria</div>
 
   <div class="loader__core">
+    <img class="loader__logo" src="img/web/logo-blanco.png" alt="Logotipo de Maquinados Villaseñor" width="440" height="734">
     <div class="loader__rig">
       <svg class="loader__ring" viewBox="0 0 220 220" aria-hidden="true">
         <circle class="loader__track" cx="110" cy="110" r="104"/>
@@ -155,8 +157,7 @@
 <header class="header" id="header">
   <div class="header__inner">
     <a class="brand" href="#inicio" aria-label="Maquinados Villaseñor — Ir al inicio">
-      <!-- Marca provisional (engrane + V). Sustituir por el logotipo oficial cuando se tenga el archivo -->
-      <svg class="brand__mark" viewBox="-24 -24 48 48" aria-hidden="true"><use class="brand__gear" href="#gp10"/><path class="brand__v" d="M-7 -6 0 8 7 -6"/></svg>
+      <img class="brand__logo" src="img/web/logo-blanco.png" alt="" width="440" height="734">
       <span class="brand__txt"><b>Maquinados</b><i>Villaseñor</i></span>
     </a>
 
@@ -887,7 +888,7 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <a class="brand" href="#inicio" aria-label="Maquinados Villaseñor — Ir al inicio">
-          <svg class="brand__mark" viewBox="-24 -24 48 48" aria-hidden="true"><use class="brand__gear" href="#gp10"/><path class="brand__v" d="M-7 -6 0 8 7 -6"/></svg>
+          <img class="brand__logo" src="img/web/logo-blanco.png" alt="" width="440" height="734" loading="lazy">
           <span class="brand__txt"><b>Maquinados</b><i>Villaseñor</i></span>
         </a>
         <p>Taller de maquinados industriales. Engranes, flechas, sinfines, poleas y refacciones hechas a la medida de tu equipo.</p>
